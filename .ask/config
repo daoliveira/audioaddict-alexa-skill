@@ -1,0 +1,53 @@
+{
+  "deploy_settings": {
+    "default": {
+      "skill_id": "amzn1.ask.skill.f33b5c94-d67e-4c55-98db-16c793bf7737",
+      "was_cloned": false,
+      "resources": {
+        "manifest": {
+          "eTag": "f1690eb96f8511ae4dc2fca8a82dca9b"
+        },
+        "interactionModel": {
+          "en-US": {
+            "eTag": "2bd4223be18f3e3e334cc68196d522fa"
+          },
+          "en-CA": {
+            "eTag": "2bd4223be18f3e3e334cc68196d522fa"
+          },
+          "en-AU": {
+            "eTag": "2bd4223be18f3e3e334cc68196d522fa"
+          },
+          "en-IN": {
+            "eTag": "2bd4223be18f3e3e334cc68196d522fa"
+          },
+          "en-GB": {
+            "eTag": "2bd4223be18f3e3e334cc68196d522fa"
+          }
+        },
+        "lambda": [
+          {
+            "arn": "arn:aws:lambda:us-east-1:368047825715:function:streamer",
+            "awsRegion": "us-east-1",
+            "functionName": "streamer",
+            "alexaUsage": [
+              "custom/default"
+            ],
+            "revisionId": "0130fe0d-9d66-4cf6-a93a-a0c2b103cc39"
+          }
+        ]
+      },
+      "merge": {
+        "manifest": {
+          "apis": {
+            "custom": {
+              "endpoint": {
+                "uri": "arn:aws:lambda:us-east-1:368047825715:function:streamer"
+              }
+            }
+          }
+        }
+      },
+      "in_skill_products": []
+    }
+  }
+}

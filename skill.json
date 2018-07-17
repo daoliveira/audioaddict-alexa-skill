@@ -1,0 +1,121 @@
+{
+	"manifest": {
+		"publishingInformation": {
+			"locales": {
+				"en-US": {
+					"summary": "A DI.FM, RadioTunes, ROCKRADIO, JAZZRADIO and ClassicalRadio aggregator for Alexa.",
+					"examplePhrases": [
+						"Alexa, ask my radio to play Bossa Nova",
+						"Alexa, ask my radio what is playing",
+						"Alexa, ask my radio to play a channel from ClassicalRadio"
+					],
+					"keywords": [
+						"audio streaming",
+						"music",
+						"live music"
+					],
+					"name": "The Big Five",
+					"smallIconUri": "https://s3.amazonaws.com/cdn.dabblelab.com/img/skill-template-default-sm.png",
+					"description": "A DI.FM, RadioTunes, ROCKRADIO, JAZZRADIO and ClassicalRadio aggregator for Alexa.",
+					"largeIconUri": "https://s3.amazonaws.com/cdn.dabblelab.com/img/skill-template-default-lg.png"
+				},
+				"en-CA": {
+					"summary": "A DI.FM, RadioTunes, ROCKRADIO, JAZZRADIO and ClassicalRadio aggregator for Alexa.",
+					"examplePhrases": [
+						"Alexa, ask my radio to play Bossa Nova",
+						"Alexa, ask my radio what is playing",
+						"Alexa, ask my radio to play a channel from ClassicalRadio"
+					],
+					"keywords": [
+						"audio streaming",
+						"music",
+						"live music"
+					],
+					"name": "The Big Five",
+					"smallIconUri": "https://s3.amazonaws.com/cdn.dabblelab.com/img/skill-template-default-sm.png",
+					"description": "A DI.FM, RadioTunes, ROCKRADIO, JAZZRADIO and ClassicalRadio aggregator for Alexa.",
+					"largeIconUri": "https://s3.amazonaws.com/cdn.dabblelab.com/img/skill-template-default-lg.png"
+				},
+				"en-AU": {
+					"summary": "A DI.FM, RadioTunes, ROCKRADIO, JAZZRADIO and ClassicalRadio aggregator for Alexa.",
+					"examplePhrases": [
+						"Alexa, ask my radio to play Bossa Nova",
+						"Alexa, ask my radio what is playing",
+						"Alexa, ask my radio to play a channel from ClassicalRadio"
+					],
+					"keywords": [
+						"audio streaming",
+						"music",
+						"live music"
+					],
+					"name": "The Big Five",
+					"smallIconUri": "https://s3.amazonaws.com/cdn.dabblelab.com/img/skill-template-default-sm.png",
+					"description": "A DI.FM, RadioTunes, ROCKRADIO, JAZZRADIO and ClassicalRadio aggregator for Alexa.",
+					"largeIconUri": "https://s3.amazonaws.com/cdn.dabblelab.com/img/skill-template-default-lg.png"
+				},
+				"en-IN": {
+					"summary": "A DI.FM, RadioTunes, ROCKRADIO, JAZZRADIO and ClassicalRadio aggregator for Alexa.",
+					"examplePhrases": [
+						"Alexa, ask my radio to play Bossa Nova",
+						"Alexa, ask my radio what is playing",
+						"Alexa, ask my radio to play a channel from ClassicalRadio"
+					],
+					"keywords": [
+						"audio streaming",
+						"music",
+						"live music"
+					],
+					"name": "The Big Five",
+					"smallIconUri": "https://s3.amazonaws.com/cdn.dabblelab.com/img/skill-template-default-sm.png",
+					"description": "A DI.FM, RadioTunes, ROCKRADIO, JAZZRADIO and ClassicalRadio aggregator for Alexa.",
+					"largeIconUri": "https://s3.amazonaws.com/cdn.dabblelab.com/img/skill-template-default-lg.png"
+				},
+				"en-GB": {
+					"summary": "A DI.FM, RadioTunes, ROCKRADIO, JAZZRADIO and ClassicalRadio aggregator for Alexa.",
+					"examplePhrases": [
+						"Alexa, ask my radio to play Bossa Nova",
+						"Alexa, ask my radio what is playing",
+						"Alexa, ask my radio to play a channel from ClassicalRadio"
+					],
+					"keywords": [
+						"audio streaming",
+						"music",
+						"live music"
+					],
+					"name": "The Big Five",
+					"smallIconUri": "https://s3.amazonaws.com/cdn.dabblelab.com/img/skill-template-default-sm.png",
+					"description": "A DI.FM, RadioTunes, ROCKRADIO, JAZZRADIO and ClassicalRadio aggregator for Alexa.",
+					"largeIconUri": "https://s3.amazonaws.com/cdn.dabblelab.com/img/skill-template-default-lg.png"
+				}
+			},
+			"isAvailableWorldwide": true,
+			"testingInstructions": "No special instructions",
+			"category": "STREAMING_SERVICE",
+			"distributionCountries": []
+		},
+		"apis": {
+			"custom": {
+				"endpoint": {
+					"sourceDir": "./lambda/streamer"
+				},
+				"interfaces": [
+					{
+						"type": "AUDIO_PLAYER"
+					},
+					{
+						"type": "CAN_FULFILL_INTENT_REQUEST"
+					}
+				]
+			}
+		},
+		"manifestVersion": "1.0",
+		"permissions": [],
+		"privacyAndCompliance": {
+			"allowsPurchases": false,
+			"isExportCompliant": true,
+			"containsAds": false,
+			"isChildDirected": false,
+			"usesPersonalInfo": false
+		}
+	}
+}

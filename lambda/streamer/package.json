@@ -1,0 +1,23 @@
+{
+  "name": "the-big-five",
+  "version": "1.0.0",
+  "description": "A DI.FM, RadioTunes, ROCKRADIO, JAZZRADIO and ClassicalRadio aggregator for Alexa.",
+  "main": "index.js",
+  "keywords": [
+    "alexa",
+    "skill",
+    "audio streaming"
+  ],
+  "author": "Deyvisson Oliveira",
+  "license": "MIT",
+  "dependencies": {
+    "alexa-sdk": "^1.0.25",
+    "lodash": "^4.17.10",
+    "request": "^2.87.0",
+    "ssml-builder": "^0.4.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/daoliveira/the-big-five.git"
+  }
+}
