@@ -1,4 +1,4 @@
-# The Big Five
+# AudioAddict Alexa Skill
 A DI.FM, RadioTunes, ROCKRADIO, JAZZRADIO and ClassicalRadio skill for Alexa.
 
 ## Introduction
