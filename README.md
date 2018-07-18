@@ -133,15 +133,28 @@ We can set up an http-to-https proxy using AWS S3 and CloudFront. There's a cost
 10. If there's sound coming from your streaming client you can move to the next section.
 11. It goes without saying you shouldn't share your CloudFront URL, unless you're OK with the costs associated with other people's traffic through your CloudFront Distribution.
 
-## Creating the AWS Lambda function
-(Have to do through CLI, creating manually is too painful, ignore the Steps below)
+## Deploying AWS Lambda function and Alexa Skill
+When I started writing this guide my idea was to have steps for setting up the AWS Lambda function and Alexa Skill manually through AWS and Amazon Developer web UIs. As the skill's interaction model grew in number of intents, utterances, slot types and values, it became clear that setting this up manually would be painful and extremely error prone. That's why we're using the good old command line to automate things for us.
+1. [Install GIT](https://git-scm.com/downloads) if you haven't already and clone this project OR download this project directly using this [link](https://github.com/daoliveira/the-big-five/archive/master.zip)
+2. Use a version manager to install Node.js and npn, follow the instructions [here](https://docs.npmjs.com/getting-started/installing-node#using-a-version-manager-to-install-nodejs-and-npm)
+3. After installation open a Terminal and try both commands
 
-It took me some time to understand that Echo devices are dumb devices and most processing is done by external services. The AWS Lambda function is the brain of our skill, and we'll be setting it up and uploading code to it now.
-1. From the AWS Console, navigate to Lambda.
-2. Click Create function;
-3. Under "Author from scratch" type a name (anything you want to call your function), under Runtime select Node.js 6.10, under Role select "Create new role from template(s)", under Role name type anything to name the new Role being created and you can leave "Policy template" blank, click Create function.
-4. Scroll down to Function code and in "Code entry type" select Upload a .ZIP file. Click Upload and point to the ZIP file you downloaded from xxxxxx
-5. Under "Environment variables" add the following key-value pairs:
+```
+$ node -v
+v10.6.0
+
+$ npm -v
+6.1.0
+``` 
+
+4. Notice that the node version is higher then what is supported by AWS Lambda right now (v8.10). We have to fix that by issuing `$nvm install 8.10`. Now `$ node -v` should return v8.10.0
+5. Install ASK CLI following this [guide](https://developer.amazon.com/docs/smapi/quick-start-alexa-skills-kit-command-line-interface.html). When issuing `$ ask init` choose the "Yes. Set up the AWS credentials" and enter your AWS Access Key ID and AWS Secret Access Key, instructions on how to obtain these keys [here](https://developer.amazon.com/docs/smapi/set-up-credentials-for-an-amazon-web-services-account.html)
+6. Navigate to the lambda/streamer directory of the project you cloned or downloaded in Step 1 and run `$ npm install`.
+7. Navigate to the root directory of the project (the-big-five) and run `$ ask deploy`. This will deploy the AWS Lambda function and the Skill interaction models.
+8. Before start talking to Alexa, we have to set up a couple of environment variables in the AWS Lambda web UI.
+9. From the AWS Console, navigate to Lambda.
+10. Click on the recently created ask-custom-streamer-default Lambda Function.
+11. Scroll down to "Environment variables" add the following key-value pairs:
 
 ```
 CLOUDFRONT_URL			https://<CloudFront Domain Name>
@@ -155,19 +168,15 @@ CLOUDFRONT_URL			https://d7a2idjk9dhjd.cloudfront.net
 LISTEN_KEY			78920bc0a43b8543a33a013f
 ```
 
-6. Click Save
-7. Scroll all the way to the top and copy the ARN value, it should look like arn:aws:lambda:us-east-1:123456789012:function:lambdaFunctioName
-8. Before moving on to the next section, let's test this Lambda function to make sure everything is working so far.
-9. At the top, in the "Select a test event..." dropdown, select "Configure test events"
-10. In the "Event template" dropdown, select "Alexa Intent - GetNewFact", in Event name you can type PlayRandomChannel, and in the code below look for GetNewFactIntent and replace it by PlayRandomChannel
-11. Click Create at the bottom
-12. You should be back to the main screen with PlayRandomChannel selected in the dropdown. Click Test.
-13. You should get a green card saying "Execution result: succeeded". We're ready to move to the last section.
-
-## Creating the Alexa skill
-The Alexa skill piece contains interaction models and maps what you say to Alexa with what your Lambda function should execute.
-
-(Have to do through CLI, creating manually is too painful, working on the Steps)
+12. Click Save
+13. We can test this Lambda function to make sure everything is working so far.
+14. At the top, in the "Select a test event..." dropdown, select "Configure test events"
+15. In the "Event template" dropdown, select "Alexa Start Session", in Event name you can type AlexaStartSession
+16. Click Create at the bottom
+17. You should be back to the main screen with AlexaStartSession selected in the dropdown. Click Test.
+13. You should get a green card saying "Execution result: succeeded".
+14. You look at your Echo and say "Alexa, ask *my radio* to play any channel from ClassicalRadio."
+15. To play with the Skill invocation, intents and utterances go to developer.amazon.com/alexa/console/ask
 
 ## To Do List / Help Needed
 - [ ] Implement name-free interaction (CanFulfillIntentRequest) so we can say things like "Alexa, play Tech House station." and Alexa directs the intent to this skill (not sure how to do this, this became available to dev recently and documentation is still blurry)
