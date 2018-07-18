@@ -1,5 +1,5 @@
 # AudioAddict Alexa Skill
-A DI.FM, RadioTunes, ROCKRADIO, JAZZRADIO and ClassicalRadio skill for Alexa.
+Unofficial DI.FM, RadioTunes, ROCKRADIO, JAZZRADIO and ClassicalRadio skill for Alexa.
 
 ## Introduction
 This Alexa skill allows you to listen to 300+ streams from DI.FM, RadioTunes, ROCKRADIO, JAZZRADIO and ClassicalRadio.
