@@ -178,7 +178,9 @@ LISTEN_KEY			78920bc0a43b8543a33a013f
 14. You look at your Echo and say "Alexa, ask *my radio* to play any channel from ClassicalRadio."
 15. To play with the Skill invocation, intents and utterances go to developer.amazon.com/alexa/console/ask
 
-## To Do List / Help Needed
+## To Do List
+- [ ] Integrate with DI.FM Favorites list (figure out if there's a public API for that and how we'd benefit from it, maybe "Alexa, ask *my radio* to play any channel from my favorites" or "Alexa, ask *my radio* to play any channel from ClassicalRadio's favorites" then "Alexa, next/previous." would navigate in the favorites list only)
+- [ ] Add more exploration. "You're listening to New Age on RadioTunes." "Alexa, ask *my radio* if there are any similar channels." "I'd suggest World, Nature or Vocal New Age channels."
 - [ ] Implement name-free interaction (CanFulfillIntentRequest) so we can say things like "Alexa, play Tech House station." and Alexa directs the intent to this skill (not sure how to do this, this became available to dev recently and documentation is still blurry)
 - [ ] Multi-room playback. **Not available to skill developers, only Amazon's inner circle.**
 - [ ] Implement "Alexa, what song is this?" (without skill invocation name).  **Not available to skill developers, only Amazon's inner circle.** From Dev forums people believe that NowPlaying should be part of the AudioPlayer interface (like AMAZON.PauseIntent, AMAZON.NextIntent, etc) but according to Amazon this is not supported yet (https://forums.developer.amazon.com/questions/70131/alexa-whats-playing-custom-information.html).
