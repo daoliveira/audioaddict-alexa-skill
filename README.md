@@ -116,7 +116,7 @@ We can set up an http-to-https proxy using AWS S3 and CloudFront. There's a cost
 ```
 
 10. Click Save;
-11. Before setting up CloudFront, check if the redirection is working by opening <Endpoint Url from Step 9>/jazzradio/bassjazz.pls?listen_key=<Your DI.FM Listen Key> in any streaming client, i.e VLC, iTunes, Windows Media Player, etc. The URL will look like: http://my-bucket-name.s3-website-us-east-1.amazonaws.com/jazzradio/bassjazz.pls?listen_key=78920bc0a43b8543a33a013f (You can obtain your Listen Key from DI.FM, RadioTunes, ROCKRADIO, JAZZRADIO or ClassicalRadio websites under Player Settings, the same Listen Key is shared by all five);
+11. Before setting up CloudFront, check if the redirection is working by opening <Endpoint Url from Step 9>/jazzradio/bassjazz.pls?listen_key=<Your DI FM Listen Key> in any streaming client, i.e VLC, iTunes, Windows Media Player, etc. The URL will look like: http://my-bucket-name.s3-website-us-east-1.amazonaws.com/jazzradio/bassjazz.pls?listen_key=78920bc0a43b8543a33a013f (You can obtain your Listen Key from DI.FM, RadioTunes, ROCKRADIO, JAZZRADIO or ClassicalRadio websites under Player Settings, the same Listen Key is shared by all five);
 12. If the stream is playing you can proceed to the next section.
 
 ### AWS CloudFront Setup
@@ -129,7 +129,7 @@ We can set up an http-to-https proxy using AWS S3 and CloudFront. There's a cost
 7. For the rest keep all the defaults and click "Create Distribution".
 8. You'll see your new distribution under CloudFront Distribution, wait for the Status to change from In Progress to Deployed then move to the next step.
 8. Before moving to deploying the Alexa skill, let's make sure the http-to-https redirection works. Double click the value under Domain Name to select your CloudFront distribution URL and copy this value;
-9. Back to your streaming client, try to open https://<Domain Name you copied from last step>/jazzradio/bassjazz.pls?listen_key=<Your DI.FM Listen Key>, it should look like https://d7a2idjk9dhjd.cloudfront.net/jazzradio/bassjazz.pls?listen_key=78920bc0a43b8543a33a013f (this URL is just an example, don't use it, it's not a real CloudFront URL and Listen Key)
+9. Back to your streaming client, try to open https://<Domain Name you copied from last step>/jazzradio/bassjazz.pls?listen_key=<Your DI FM Listen Key>, it should look like https://d7a2idjk9dhjd.cloudfront.net/jazzradio/bassjazz.pls?listen_key=78920bc0a43b8543a33a013f (this URL is just an example, don't use it, it's not a real CloudFront URL and Listen Key)
 10. If there's sound coming from your streaming client you can move to the next section.
 11. It goes without saying you shouldn't share your CloudFront URL, unless you're OK with the costs associated with other people's traffic through your CloudFront Distribution.
 
