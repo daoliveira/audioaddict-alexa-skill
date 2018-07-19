@@ -180,6 +180,6 @@ LISTEN_KEY			78920bc0a43b8543a33a013f
 
 ## To Do List / Help Needed
 - [ ] Implement name-free interaction (CanFulfillIntentRequest) so we can say things like "Alexa, play Tech House station." and Alexa directs the intent to this skill (not sure how to do this, this became available to dev recently and documentation is still blurry)
-- [ ] Multi-room playback. <span style="color:red">Not available to skill developers, only Amazon's inner circle.</span>
-- [ ] Implement "Alexa, what song is this?" (without skill invocation name).  <span style="color:red">Not available to skill developers, only Amazon's inner circle.</span> From Dev forums people believe that NowPlaying should be part of the AudioPlayer interface (like AMAZON.PauseIntent, AMAZON.NextIntent, etc) but according to Amazon this is not supported yet (https://forums.developer.amazon.com/questions/70131/alexa-whats-playing-custom-information.html).
+- [ ] Multi-room playback. **Not available to skill developers, only Amazon's inner circle.**
+- [ ] Implement "Alexa, what song is this?" (without skill invocation name).  **Not available to skill developers, only Amazon's inner circle.** From Dev forums people believe that NowPlaying should be part of the AudioPlayer interface (like AMAZON.PauseIntent, AMAZON.NextIntent, etc) but according to Amazon this is not supported yet (https://forums.developer.amazon.com/questions/70131/alexa-whats-playing-custom-information.html).
 - [ ] Enable UI controls (play, pause, next, previous) like the ones that show up on alexa.amazon.com when you stream from TuneIn, Spotify or Amazon Music (not sure how to do this)
