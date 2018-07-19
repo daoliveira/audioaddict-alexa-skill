@@ -101,9 +101,6 @@
 				"interfaces": [
 					{
 						"type": "AUDIO_PLAYER"
-					},
-					{
-						"type": "CAN_FULFILL_INTENT_REQUEST"
 					}
 				]
 			}
