@@ -199,6 +199,7 @@
                 "value": "DI.FM",
                 "synonyms": [
                   "digitally imported",
+                  "d. i. f. m.",
                   "d. i. dot f. m."
                 ]
               }
@@ -1119,7 +1120,13 @@
               "name": {
                 "value": "80s Hits",
                 "synonyms": [
-                  "eighties hits"
+                  "eighties hits",
+                  "music of the eighties",
+                  "hits of the eighties",
+                  "musical hits of the eighties",
+                  "music from the eighties",
+                  "hits from the eighties",
+                  "musical hits from the eighties"
                 ]
               }
             },
@@ -1137,7 +1144,13 @@
               "name": {
                 "value": "70s Hits",
                 "synonyms": [
-                  "seventies hits"
+                  "seventies hits",
+                  "music of the seventies",
+                  "hits of the seventies",
+                  "musical hits of the seventies",
+                  "music from the seventies",
+                  "hits from the seventies",
+                  "musical hits from the seventies"
                 ]
               }
             },
@@ -1372,7 +1385,13 @@
               "name": {
                 "value": "80s Rock Hits",
                 "synonyms": [
-                  "eighties rock hits"
+                  "eighties rock hits",
+                  "rock of the eighties",
+                  "rock hits of the eighties",
+                  "rock music of the eighties",
+                  "rock from the eighties",
+                  "rock hits from the eighties",
+                  "rock music from the eighties"
                 ]
               }
             },
@@ -1381,7 +1400,13 @@
               "name": {
                 "value": "90s Rock",
                 "synonyms": [
-                  "nineties rock"
+                  "nineties rock",
+                  "rock of the nineties",
+                  "rock hits of the nineties",
+                  "rock music of the nineties",
+                  "rock from the nineties",
+                  "rock hits from the nineties",
+                  "rock music from the nineties"
                 ]
               }
             },
@@ -1396,7 +1421,13 @@
               "name": {
                 "value": "90s Hits",
                 "synonyms": [
-                  "nineties hits"
+                  "nineties hits",
+                  "music of the nineties",
+                  "hits of the nineties",
+                  "musical hits of the nineties",
+                  "music from the nineties",
+                  "hits from the nineties",
+                  "musical hits from the nineties"
                 ]
               }
             },
@@ -1429,7 +1460,13 @@
               "name": {
                 "value": "60s Hits",
                 "synonyms": [
-                  "sixties hits"
+                  "sixties hits",
+                  "music of the sixties",
+                  "hits of the sixties",
+                  "musical hits of the sixties",
+                  "music from the sixties",
+                  "hits from the sixties",
+                  "musical hits from the sixties"
                 ]
               }
             },
@@ -1438,7 +1475,14 @@
               "name": {
                 "value": "60s Rock",
                 "synonyms": [
-                  "sixties rock"
+                  "sixties rock",
+                  "rock of the sixties",
+                  "rock hits of the sixties",
+                  "rock music of the sixties",
+                  "rock from the sixties",
+                  "rock hits from the sixties",
+                  "rock music from the sixties"
+                  
                 ]
               }
             },
@@ -1447,7 +1491,13 @@
               "name": {
                 "value": "80s Dance",
                 "synonyms": [
-                  "eighties dance"
+                  "eighties dance",
+                  "dance from the eighties",
+                  "dance hits from the eighties",
+                  "dance music from the eighties",
+                  "dance of the eighties",
+                  "dance hits of the eighties",
+                  "dance music of the eighties"
                 ]
               }
             },
@@ -1456,7 +1506,13 @@
               "name": {
                 "value": "90s R&B",
                 "synonyms": [
-                  "nineties r. and b."
+                  "nineties r. and b.",
+                  "r. and b. from the nineties",
+                  "r. and b. hits from the nineties",
+                  "r. and b. music from the nineties",
+                  "r. and b. of the nineties",
+                  "r. and b. hits of the nineties",
+                  "r. and b. music of the nineties"
                 ]
               }
             },
@@ -1631,7 +1687,15 @@
                   "eighties alt",
                   "eighties alternative",
                   "eighties alt and new wave",
-                  "eighties alternative and new wave"
+                  "eighties alternative and new wave",
+                  "alt of the eighties",
+                  "alternative of the eighties",
+                  "alt and new wave of the eighties",
+                  "alternative and new wave of the eighties",
+                  "alt from the eighties",
+                  "alternative from the eighties",
+                  "alt and new wave from the eighties",
+                  "alternative and new wave from the eighties"
                 ]
               }
             },
@@ -1744,7 +1808,13 @@
               "name": {
                 "value": "90s Country",
                 "synonyms": [
-                  "nineties country"
+                  "nineties country",
+                  "country of the nineties",
+                  "country hits of the nineties",
+                  "country music of the nineties",
+                  "country from the nineties",
+                  "country hits from the nineties",
+                  "country music from the nineties"
                 ]
               }
             },
@@ -1793,7 +1863,13 @@
               "name": {
                 "value": "70s Rock",
                 "synonyms": [
-                  "seventies rock"
+                  "seventies rock",
+                  "rock of the seventies",
+                  "rock hits of the seventies",
+                  "rock music of the seventies",
+                  "rock from the seventies",
+                  "rock hits from the seventies",
+                  "rock music from the seventies"
                 ]
               }
             },
@@ -1844,7 +1920,13 @@
               "name": {
                 "value": "80s Rock",
                 "synonyms": [
-                  "eighties rock"
+                  "eighties rock",
+                  "rock of the eighties",
+                  "rock hits of the eighties",
+                  "rock music of the eighties",
+                  "rock from the eighties",
+                  "rock hits from the eighties",
+                  "rock music from the eighties"
                 ]
               }
             },
@@ -1910,7 +1992,13 @@
               "name": {
                 "value": "90s Rock",
                 "synonyms": [
-                  "nineties rock"
+                  "nineties rock",
+                  "rock of the nineties",
+                  "rock hits of the nineties",
+                  "rock music of the nineties",
+                  "rock from the nineties",
+                  "rock hits from the nineties",
+                  "rock music from the nineties"
                 ]
               }
             },
@@ -1955,7 +2043,13 @@
               "name": {
                 "value": "80s Alternative",
                 "synonyms": [
-                  "eighties alternative"
+                  "eighties alternative",
+                  "alternative of the eighties",
+                  "alternative hits of the eighties",
+                  "alternative music of the eighties",
+                  "alternative from the eighties",
+                  "alternative hits from the eighties",
+                  "alternative music from the eighties"
                 ]
               }
             },
@@ -1964,7 +2058,13 @@
               "name": {
                 "value": "90s Alternative",
                 "synonyms": [
-                  "nineties alternative"
+                  "nineties alternative",
+                  "alternative of the nineties",
+                  "alternative hits of the nineties",
+                  "alternative music of the nineties",
+                  "alternative from the nineties",
+                  "alternative hits from the nineties",
+                  "alternative music from the nineties"
                 ]
               }
             },
@@ -1985,7 +2085,13 @@
               "name": {
                 "value": "60s Rock",
                 "synonyms": [
-                  "sixties rock"
+                  "sixties rock",
+                  "rock of the sixties",
+                  "rock hits of the sixties",
+                  "rock music of the sixties",
+                  "rock from the sixties",
+                  "rock hits from the sixties",
+                  "rock music from the sixties"
                 ]
               }
             },
@@ -2026,7 +2132,13 @@
               "name": {
                 "value": "70s Rock",
                 "synonyms": [
-                  "seventies rock"
+                  "seventies rock",
+                  "rock of the seventies",
+                  "rock hits of the seventies",
+                  "rock music of the seventies",
+                  "rock from the seventies",
+                  "rock hits from the seventies",
+                  "rock music from the seventies"
                 ]
               }
             },
